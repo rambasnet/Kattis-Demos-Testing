@@ -2,7 +2,11 @@
 
 Demo solutions using automated unit testing
 
--   solutions available in following programming languages:
+## requirements
+
+-   bash terminal along with language specific tools (compiler/interpreter, etc.) properly installed
+
+# solutions available in following programming languages:
 
 # C++
 
