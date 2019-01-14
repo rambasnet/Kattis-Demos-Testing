@@ -1,8 +1,8 @@
 # kattisdemos
 
-Demo solutions using automated testing
+Demo solutions using automated unit testing
 
--   solutions available in: C++, Python3, NodeJS, C
+-   solutions available in following programming languages:
 
 # C++
 
@@ -28,21 +28,33 @@ Demo solutions using automated testing
 
 -   open a terminal
 -   change working directory to a problem folder, e.g.
-    \$ cd cold
+    ```
+    $ cd cold
+    ```
 -   run unit testing; user provided test cases
-    \$ python3 cold.py test
+    ```
+    $ python3 cold.py test
+    ```
 -   run kattis provided sample test cases. e.g. if 1.in and 1.ans are sample test files:
--   \$ cat 1.in | python3 cold.py | diff - 1.ans
+    ```
+    $ cat 1.in | python3 cold.py | diff - 1.ans
+    ```
 
 # NodeJS
 
 -   open a terminal
 -   change working directory to a problem folder, e.g.
-    \$ cd cold
+    ```
+    $ cd cold
+    ```
 -   run unit testing; user provided test cases
-    \$ node cold.js test
+    ```
+    $ node cold.js test
+    ```
 -   run kattis provided sample test cases. e.g. if 1.in and 1.ans are sample test files:
--   \$ cat 1.in | node cold.js | diff - 1.ans
+    ```
+    $ cat 1.in | node cold.js | diff - 1.ans
+    ```
 
 # C
 
@@ -52,11 +64,17 @@ Demo solutions using automated testing
     $ cd cold
     ```
 -   compile using g++
-    -   \$ gcc cold.c
+    ```
+    $ gcc cold.c
+    ```
 -   run unit testing; user provided test cases
-    -   \$ ./a.out test
+    ```
+    $ ./a.out test
+    ```
 -   run kattis provided sample test cases. e.g. if 1.in and 1.ans are sample test files:
-    -   \$ cat 1.in | ./a.out | diff - 1.ans
+    ```
+    $ cat 1.in | ./a.out | diff - 1.ans
+    ```
 
 # Java
 
