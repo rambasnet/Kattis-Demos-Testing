@@ -7,7 +7,7 @@ Demo solutions using automated unit testing
 # C++
 
 -   open a terminal
--   Change working directory to a problem folder, e.g.
+-   change working directory to a problem folder, e.g.
     ```
     $ cd cold
     ```
@@ -19,7 +19,7 @@ Demo solutions using automated unit testing
     ```
     $ ./a.out test
     ```
--   run kattis provided sample test cases. e.g. if 1.in and 1.ans are sample test files:
+-   run kattis provided sample test cases e.g. if 1.in and 1.ans are sample test files:
     ```
     $ cat 1.in | ./a.out | diff - 1.ans
     ```
@@ -35,7 +35,7 @@ Demo solutions using automated unit testing
     ```
     $ python3 cold.py test
     ```
--   run kattis provided sample test cases. e.g. if 1.in and 1.ans are sample test files:
+-   run kattis provided sample test cases e.g. if 1.in and 1.ans are sample test files:
     ```
     $ cat 1.in | python3 cold.py | diff - 1.ans
     ```
@@ -51,7 +51,7 @@ Demo solutions using automated unit testing
     ```
     $ node cold.js test
     ```
--   run kattis provided sample test cases. e.g. if 1.in and 1.ans are sample test files:
+-   run kattis provided sample test cases e.g. if 1.in and 1.ans are sample test files:
     ```
     $ cat 1.in | node cold.js | diff - 1.ans
     ```
@@ -59,7 +59,7 @@ Demo solutions using automated unit testing
 # C
 
 -   open a terminal
--   Change working directory to a problem folder, e.g.
+-   change working directory to a problem folder, e.g.
     ```
     $ cd cold
     ```
@@ -71,7 +71,7 @@ Demo solutions using automated unit testing
     ```
     $ ./a.out test
     ```
--   run kattis provided sample test cases. e.g. if 1.in and 1.ans are sample test files:
+-   run kattis provided sample test cases e.g. if 1.in and 1.ans are sample test files:
     ```
     $ cat 1.in | ./a.out | diff - 1.ans
     ```
