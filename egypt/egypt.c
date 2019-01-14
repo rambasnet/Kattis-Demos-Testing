@@ -42,12 +42,11 @@ void solve() {
 }
 
 int main(int argc, char* argv[]) {
-    if (argc > 1 && strncmp(argv[1], "test", 4) == 0) {
+    if (argc > 1 && strncmp(argv[1], "test", 4) == 0)
         // run local tests
         test();
-    }
-    else {
+    else 
         // solve kattis test cases
         solve();
-    }
+    return 0;
 }
