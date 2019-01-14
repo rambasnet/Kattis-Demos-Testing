@@ -40,7 +40,9 @@ Demo solutions using automated testing
 
 -   open a terminal
 -   Change working directory to a problem folder, e.g.
-    `$ cd cold`
+    ```
+    $ cd cold
+    ```
 -   compile using g++
     -   \$ gcc cold.c
 -   run unit testing; user provided test cases
