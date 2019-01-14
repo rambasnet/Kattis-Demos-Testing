@@ -40,13 +40,13 @@ Demo solutions using automated testing
 
 -   open a terminal
 -   Change working directory to a problem folder, e.g.
-    \$ cd cold
+    -   `$ cd cold`
 -   compile using g++
-    \$ gcc cold.c
+    -   \$ gcc cold.c
 -   run unit testing; user provided test cases
-    \$ ./a.out test
+    -   \$ ./a.out test
 -   run kattis provided sample test cases. e.g. if 1.in and 1.ans are sample test files:
--   \$ cat 1.in | ./a.out | diff - 1.ans
+    -   \$ cat 1.in | ./a.out | diff - 1.ans
 
 # Java
 
