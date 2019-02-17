@@ -8,6 +8,7 @@
 #include <cstdio>
 #include <vector>
 #include <functional>
+#include <sstream>
 
 using namespace std;
 using vi = vector<int>;
@@ -54,31 +55,39 @@ void test() {
 
 void solve() {
     int sides[3];
+    stringstream ans;
     while (cin >> sides[0] >> sides[1] >> sides[2] && sides[0] != 0 && sides[1] != 0) {
-        printf("%s\n", answer(sides).c_str());
+        //printf("%s\n", answer(sides).c_str());
+        ans << answer(sides) << '\n';
     }
+    cout << ans.str();
 }
 
 void solve1() {
     vi sides;
     // vi sides(3);
     int a, b, c;
+    stringstream ans;
     while (cin >> a >> b >> c && a != 0 && b != 0) {
         sides.push_back(a);
         sides.push_back(b);
         sides.push_back(c);
-        printf("%s\n", answer1(sides).c_str());
+        //printf("%s\n", answer1(sides).c_str());
+        ans << answer1(sides) << '\n';
         sides.clear();
     }
+    cout << ans.str();
 }
 
 int main(int argc, char* argv[]) {
+    ios::sync_with_stdio(false);
+
     if (argc > 1 && strncmp(argv[1], "test", 4) == 0)
         // run local tests
         test();
     else {
         // solve kattis test cases
-        //solve();
-        solve1();
+        solve();
+        //solve1();
     }
 }

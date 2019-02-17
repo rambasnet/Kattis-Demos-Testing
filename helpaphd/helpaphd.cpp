@@ -32,17 +32,22 @@ void kattis() {
     int N, ans;
     string equation;
     cin >> N;
+    stringstream result;
     while(N--) {
         cin >> equation;
         ans = answer(equation);
         if (ans == -1)
-            cout << "skipped" << endl;
+            //cout << "skipped" << endl;
+            result << "skipped\n";
         else
-            cout << ans << endl;
+            //cout << ans << endl;
+            result << ans << '\n';
     }
+    cout << result.str();
 }
 
 int main(int argc, char* argv[]) {
+    ios::sync_with_stdio(false);
     if (argc > 1 && strncmp(argv[1], "test", 4) == 0)
         test();
     else
