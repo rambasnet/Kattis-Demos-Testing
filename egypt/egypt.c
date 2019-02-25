@@ -20,15 +20,15 @@ char* answer(int *sides) {
 }
 
 void test() {
-    int input1[] = {6, 8, 10};
+    int input1[] = {8, 6, 10};
     assert(answer(input1) == "right");
-    int input2[] = {3, 4, 5};
+    int input2[] = {5, 4, 3};
     assert(answer(input2) ==  "right");
     int input3[] = {5, 12, 13};
     assert(answer(input3) == "right");
     int input4[] = {1, 2, 3};
     assert(answer(input4) == "wrong");
-    int input5[] = {100, 2000, 30000};
+    int input5[] = {2000, 100, 30000};
     assert(answer(input5) == "wrong");
     printf("all test cases passed...\n");
 }

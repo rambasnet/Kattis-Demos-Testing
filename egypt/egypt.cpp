@@ -13,6 +13,7 @@
 using namespace std;
 using vi = vector<int>;
 
+// c-array solution
 string answer(int *sides) {
     sort(sides, sides+3);
     if (pow(sides[0], 2) + pow(sides[1], 2) == pow(sides[2], 2))
@@ -21,6 +22,7 @@ string answer(int *sides) {
         return "wrong";
 }
 
+// vector solution
 string answer1(vi sides) {
     sort(sides.begin(), sides.end(), less<int>());
     if (pow(sides[0], 2) + pow(sides[1], 2) == pow(sides[2], 2))
@@ -38,13 +40,13 @@ void test() {
     assert(answer(input3) == "right");
     int input4[] = {1, 2, 3};
     assert(answer(input4) == "wrong");
-    int input5[] = {100, 2000, 30000};
+    int input5[] = {2000, 100, 30000};
     assert(answer(input5) == "wrong");
-    vi input11 = {6, 8, 10};
+    vi input11 = {10, 8, 6};
     assert(answer1(input11) == "right");
-    vi input22 = {3, 4, 5};
+    vi input22 = {4, 3, 5};
     assert(answer1(input22) ==  "right");
-    vi input33 = {5, 12, 13};
+    vi input33 = {13, 12, 5};
     assert(answer1(input33) == "right");
     vi input44 = {1, 2, 3};
     assert(answer1(input44) == "wrong");
@@ -81,7 +83,6 @@ void solve1() {
 
 int main(int argc, char* argv[]) {
     ios::sync_with_stdio(false);
-
     if (argc > 1 && strncmp(argv[1], "test", 4) == 0)
         // run local tests
         test();
