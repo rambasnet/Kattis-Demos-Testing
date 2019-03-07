@@ -3,9 +3,9 @@
 #include <string.h>
 #include <math.h>
 #include <assert.h>
-typedef unsigned int uint;
+#include <stdlib.h>
 
-#define _GNU_SOURCE
+typedef unsigned int uint;
 
 int compare (const void * a, const void * b) {
     return ( *(uint*)a - *(uint*)b );
@@ -14,9 +14,9 @@ int compare (const void * a, const void * b) {
 char* answer(int *sides) {
     qsort(sides, 3, sizeof(int), compare);
     if (pow(sides[0], 2) + pow(sides[1], 2) == pow(sides[2], 2))
-        return "right";
+        return "right"; // stored usually in .ordata section
     else
-        return "wrong";
+        return "wrong"; // stored usually in .ordata section
 }
 
 void test() {
