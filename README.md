@@ -1,6 +1,6 @@
-# kattisdemos
+# Kattis Demos
 
-Demo solutions using automated unit testing
+Demo solutions using automated testing
 
 ## requirements
 
