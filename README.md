@@ -6,7 +6,7 @@ Demo solutions using automated unit testing
 
 -   bash terminal along with language specific tools (compiler/interpreter, etc.) properly installed
 
-# solutions available in following programming languages:
+# Demos in the following programming languages
 
 # C++
 
