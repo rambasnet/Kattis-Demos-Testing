@@ -1,13 +1,13 @@
-# kattisdemos
+# Kattis Demos
 
-Demo solutions using automated unit testing
+Demo solutions using automated testing
 
 ## requirements
 
 -   bash terminal along with language specific tools (compiler/interpreter, etc.) properly installed
 -   terminal in (Linux/Mac) or command prompt in (Windows)
 
-# solutions available in following programming languages:
+# Demos in the following programming languages
 
 # C++
 
