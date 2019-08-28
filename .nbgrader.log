@@ -1,0 +1,15 @@
+[NotebookApp | WARNING] No nbgrader_config.py file found (rerun with --debug to see where nbgrader is looking)
+[NotebookApp | INFO] Loading the validate_assignment nbgrader serverextension
+[NotebookApp | INFO] Serving notebooks from local directory: /Volumes/Storage/GoogleDrive/CMU/kattisdemos
+[NotebookApp | INFO] The Jupyter Notebook is running at:
+[NotebookApp | INFO] http://localhost:8889/?token=9e78e15a3cb414dedf3ae6dafa18a29f15c7830619dfa7a4
+[NotebookApp | INFO] Use Control-C to stop this server and shut down all kernels (twice to skip confirmation).
+[NotebookApp | CRITICAL] 
+    
+    To access the notebook, open this file in a browser:
+        file:///Users/rbasnet/Library/Jupyter/runtime/nbserver-11630-open.html
+    Or copy and paste one of these URLs:
+        http://localhost:8889/?token=9e78e15a3cb414dedf3ae6dafa18a29f15c7830619dfa7a4
+[NotebookApp | INFO] interrupted
+[NotebookApp | CRITICAL] Shutdown confirmed
+[NotebookApp | INFO] Shutting down 0 kernels
