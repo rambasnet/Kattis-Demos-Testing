@@ -11,7 +11,7 @@ Demo solutions using automated testing
 
 # C++
 
--   open a terminal/cmd prompt
+-   open a terminal on Mac/Linus and cmd prompt on Windows
 -   change working directory to a problem folder, e.g.
     ```
     $ cd cold
@@ -42,7 +42,7 @@ Demo solutions using automated testing
 
 # Python3
 
-1.  open a terminal
+-   open a terminal on Mac/Linus and cmd prompt on Windows
 
 -   change working directory to a problem folder, e.g.
     ```
@@ -64,7 +64,7 @@ Demo solutions using automated testing
 
 # NodeJS
 
-1.  open a terminal
+-   open a terminal on Mac/Linus and cmd prompt on Windows
 
 -   change working directory to a problem folder, e.g.
     ```
@@ -87,7 +87,7 @@ Demo solutions using automated testing
 
 # C
 
-1.  open a terminal
+-   open a terminal on Mac/Linus and cmd prompt on Windows
 
 -   change working directory to a problem folder, e.g.
     ```
@@ -102,14 +102,14 @@ Demo solutions using automated testing
     $ ./a.out test
     ```
 -   run kattis provided sample test cases e.g. if 1.in and 1.ans are sample test files
-    - on 
+    - on Mac/Linux Terminal:
     ```
     $ cat 1.in | ./a.out | diff - 1.ans
     ```
-    in Windows cmd prompt
+    - on Windows cmd prompt:
     ```
-    > type input1.txt | a.out > programOutput1.txt
-    > FC.exe programOutput1.txt output1.txt
+    > type 1.in | a.out > out1.txt
+    > FC out1.txt 1.ans
     ```
 
 # Java
