@@ -2,10 +2,11 @@
 
 demo solutions using automated testing for some problems from https://open.kattis.com
 
-## requirements
+## Requirements
 
--   bash terminal along with language specific tools (compiler/interpreter, etc.) properly installed
--   terminal in (Linux/Mac) or command prompt in (Windows)
+-   bash terminal (preferred) along with language specific tools (compiler/interpreter, etc.) properly installed
+-   command prompt in Windows with g++
+    - g++ compiler can be downloaded from https://nuwen.net/mingw.html; extract it into c:\ drive as shown in the instructions here: https://nuwen.net/mingw.html#install
 
 # Programming Languages
 - demos are provided in the following several languagues
