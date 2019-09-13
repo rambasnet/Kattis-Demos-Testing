@@ -1,17 +1,19 @@
 # Kattis Demos
 
-Demo solutions using automated testing
+demo solutions using automated testing for some problems from https://open.kattis.com
 
 ## requirements
 
 -   bash terminal along with language specific tools (compiler/interpreter, etc.) properly installed
 -   terminal in (Linux/Mac) or command prompt in (Windows)
 
-# Demos in the following programming languages
+# Programming Languages
+- demos are provided in the following several languagues
+- follow the instruction based on your language and operating system
 
 # C++
 
--   open a terminal on Mac/Linus and cmd prompt on Windows
+-   open a terminal on Mac/Linux and cmd prompt on Windows
 -   change working directory to a problem folder, e.g.
     ```
     $ cd cold
@@ -42,7 +44,7 @@ Demo solutions using automated testing
 
 # Python3
 
--   open a terminal on Mac/Linus and cmd prompt on Windows
+-   open a terminal on Mac/Linux and cmd prompt on Windows
 
 -   change working directory to a problem folder, e.g.
     ```
@@ -64,7 +66,7 @@ Demo solutions using automated testing
 
 # NodeJS
 
--   open a terminal on Mac/Linus and cmd prompt on Windows
+-   open a terminal on Mac/Linux and cmd prompt on Windows
 
 -   change working directory to a problem folder, e.g.
     ```
@@ -87,7 +89,7 @@ Demo solutions using automated testing
 
 # C
 
--   open a terminal on Mac/Linus and cmd prompt on Windows
+-   open a terminal on Mac/Linux and cmd prompt on Windows
 
 -   change working directory to a problem folder, e.g.
     ```
