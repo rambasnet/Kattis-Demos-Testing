@@ -21,18 +21,23 @@ Demo solutions using automated testing
     $ g++ -std=c++14 cold.cpp
     ```
 -   run unit testing; user provided test cases
+    - on Mac/Linux:
     ```
     $ ./a.out test
     ```
+    - on Windows:
+    ```
+    > a.exe test
+    ```
 -   run kattis provided sample test cases e.g. if 1.in and 1.ans are sample test files:
-    in Mac/Linux Terminal:
+    - On Mac/Linux Terminal:
     ```
     $ cat 1.in | ./a.out | diff - 1.ans
     ```
-    in Windows cmd prompt:
+    - On Windows cmd prompt:
     ```
-    > type input1.txt | a.out > programOutput1.txt
-    > FC.exe programOutput1.txt output1.txt
+    > type 1.in | a.exe > out1.txt
+    > FC out1.txt 1.ans
     ```
 
 # Python3
@@ -51,10 +56,10 @@ Demo solutions using automated testing
     ```
     $ cat 1.in | python3 cold.py | diff - 1.ans
     ```
-    in Windows cmd prompt
+    - on Windows cmd prompt:
     ```
-    > type input1.txt | python3 program.py > programOutput1.txt
-    > FC.exe programOutput1.txt output1.txt
+    > type 1.tin | python3 program.py > out1.txt
+    > FC out1.txt 1.ans
     ```
 
 # NodeJS
@@ -69,14 +74,15 @@ Demo solutions using automated testing
     ```
     $ node cold.js test
     ```
--   run kattis provided sample test cases e.g. if 1.in and 1.ans are sample test files:
+-   run kattis provided sample test cases e.g. if 1.in and 1.ans are sample test files
+    - on Mac/Linux Terminal:
     ```
     $ cat 1.in | node cold.js | diff - 1.ans
     ```
-    in Windows cmd prompt
+    - on Windows cmd prompt:
     ```
-    > type input1.txt | node cold.js > programOutput1.txt
-    > FC.exe programOutput1.txt output1.txt
+    > type 1.in | node cold.js > out1.txt
+    > FC out1.txt 1.ans
     ```
 
 # C
@@ -95,7 +101,8 @@ Demo solutions using automated testing
     ```
     $ ./a.out test
     ```
--   run kattis provided sample test cases e.g. if 1.in and 1.ans are sample test files:
+-   run kattis provided sample test cases e.g. if 1.in and 1.ans are sample test files
+    - on 
     ```
     $ cat 1.in | ./a.out | diff - 1.ans
     ```
