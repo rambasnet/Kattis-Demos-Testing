@@ -61,7 +61,7 @@ demo solutions using automated testing for some problems from https://open.katti
     ```
     - on Windows cmd prompt:
     ```
-    > type 1.in | python3 program.py > out1.txt
+    > type 1.in | python3 cold.py > out1.txt
     > FC out1.txt 1.ans
     ```
 
