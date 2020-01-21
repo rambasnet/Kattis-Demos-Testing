@@ -5,8 +5,8 @@ Demo solutions using automated testing for some problems from [https://open.katt
 ## Requirements
 
 - Linux/Mac/WSL (Windows Subsystem Layer) bash terminal is preferred along with language specific tools (compiler/interpreter, etc.) properly installed
-- On Windows g++ compiler is required to run from command prompt
-  - g++ for Windows compiler can be downloaded from [https://nuwen.net/mingw.html](https://nuwen.net/mingw.html); extract it into C:\ drive as shown in the instructions here: [https://nuwen.net/mingw.html#install](https://nuwen.net/mingw.html#install)
+- On Windows g++ compiler is required to compile and run C and C++ code from command prompt
+  - g++ compiler for Windows can be downloaded from [https://nuwen.net/mingw.html](https://nuwen.net/mingw.html); extract it into C:\ drive as shown in the instructions here: [https://nuwen.net/mingw.html#install](https://nuwen.net/mingw.html#install)
 
 ## Programming Languages
 
