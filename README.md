@@ -15,7 +15,7 @@ Demo solutions using automated testing for some problems from [https://open.katt
 
 ## C++
 
-- open a terminal on Mac/Linux/WSL and cmd prompt on Windows
+- open a terminal on Mac/Linux/WSL or cmd prompt on Windows
 - change working directory to a problem folder, e.g.
 
 ```bash
@@ -57,7 +57,7 @@ $ cat 1.in | ./a.out | diff - 1.ans
 
 ## Python3
 
-- open a terminal on Mac/Linux and cmd prompt on Windows
+- open a terminal on Mac/Linux/WSL or cmd prompt on Windows
 - change working directory to a problem folder, e.g.,
 
 ```bash
@@ -85,7 +85,7 @@ $ cat 1.in | python3 cold.py | diff - 1.ans
 
 ## NodeJS
 
-- open a terminal on Mac/Linux and cmd prompt on Windows
+- open a terminal on Mac/Linux/WSL or cmd prompt on Windows
 - change working directory to a problem folder, e.g.
 
 ```bash
@@ -114,7 +114,7 @@ $ cat 1.in | node cold.js | diff - 1.ans
 
 ## C
 
-- open a terminal on Mac/Linux and cmd prompt on Windows
+- open a terminal on Mac/Linux/WSL or cmd prompt on Windows
 - change working directory to a problem folder, e.g.
 
 ```bash
