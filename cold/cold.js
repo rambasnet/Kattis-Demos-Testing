@@ -18,18 +18,25 @@ function solve() {
         //console.log(line);
         if (lineNum == 1) lineNum++;
         else {
-            let nums = line.split(" ");
-            //console.log(nums)
-            let count = answer(nums);
-            console.log(count);
+            //console.log(answer(line));
+            console.log(answer1(line));
         }
     });
 }
 
-function answer(nums) {
+function answer(line) {
+    let nums = line.split(" ");
     let count = 0;
     for (var i in nums) {
         if (parseInt(nums[i]) < 0) ++count;
+    }
+    return count;
+}
+
+function answer1(line) {
+    let count = 0;
+    for (let ch of line) {
+        if (ch == '-') count++;
     }
     return count;
 }
