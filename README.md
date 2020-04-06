@@ -10,7 +10,7 @@ Demo solutions using automated testing for some problems from [https://open.katt
 
 ## Programming Languages
 
-- demos are provided in the following several languagues
+- demos are provided in the following several languages
 - follow the instruction based on your language and operating system
 
 ## C++
