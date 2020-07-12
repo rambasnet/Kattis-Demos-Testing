@@ -1,6 +1,6 @@
 /*
-By:
-Date:
+Author: Ram Basnet
+Date: January 2017
 Kattis - Cold-puter Science problem
 https://open.kattis.com/problems/cold
 */
@@ -8,6 +8,7 @@ https://open.kattis.com/problems/cold
 #include <iostream>
 #include <cstring>
 #include <cassert>
+#include <string>
 
 using namespace std;
 
@@ -16,7 +17,7 @@ int answer(int);
 void solve();
 
 int main(int argc, char* argv[]) {
-    if (argc > 1 && (strncmp(argv[1], "test", 4) == 0))
+    if (argc > 1 && string(argv[1]) == "test")
         test();
     else
         solve();
@@ -34,7 +35,7 @@ void test() {
     assert(ans == expected);
     assert(answer(1000000) == 0);
     assert(answer(0) == 0);
-    cout << "all test cases passed..." << endl;
+    cerr << "all test cases passed..." << endl;
 }
 
 void solve() {

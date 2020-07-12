@@ -21,7 +21,7 @@ void test() {
     assert(answer(x) == "is even");
     assert(answer(9) == "is odd");
     assert(answer(0) == "is even");
-    cout << "all test cases passed..." << endl;
+    cerr << "all test cases passed..." << endl;
 }
 
 void kattis() {
@@ -34,7 +34,7 @@ void kattis() {
 }
 
 int main(int argc, char* argv[]) {
-    if (argc > 1 && strncmp(argv[1], "test", 4) == 0)
+    if (argc > 1 && string(argv[1]) == "test")
         test();
     else
         kattis();

@@ -17,7 +17,7 @@ void solve();
 
 int main(int argc, char* argv[]) {
     //cout << argc << argv[1] << endl;
-    if (argc > 1 && strncmp(argv[1], "test", 4) == 0)
+    if (argc > 1 && string(argv[1]) == "test")
         test();
     else
         solve();
@@ -30,7 +30,7 @@ string answer() {
 
 void test() {
     assert(answer() == "Hello World");
-    cout << "All test cases passed...\n";
+    cerr << "All test cases passed...\n";
 }
 
 void solve() {

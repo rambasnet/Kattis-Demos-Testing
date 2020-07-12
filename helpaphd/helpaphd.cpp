@@ -25,7 +25,7 @@ void test() {
     assert(answer("P=NP") == -1);
     assert(answer("999+1") == 1000);
     assert(answer("1000+0") == 1000);
-    cout << "all test cases passed..." << endl;
+    cerr << "all test cases passed..." << endl;
 }
 
 void kattis() {
@@ -48,7 +48,7 @@ void kattis() {
 
 int main(int argc, char* argv[]) {
     ios::sync_with_stdio(false);
-    if (argc > 1 && strncmp(argv[1], "test", 4) == 0)
+    if (argc > 1 && string(argv[1]) == "test")
         test();
     else
         kattis();
