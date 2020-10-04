@@ -1,4 +1,5 @@
 #!/usr/bin/env python3
+
 # Kattis - hello problem
 
 import sys

@@ -19,40 +19,40 @@ Demo solutions using automated testing for some problems from [https://open.katt
 - change working directory to a problem folder, e.g.
 
 ```bash
-$ cd cold
+  cd cold/C++
 ```
 
 - compile using g++
 
 ```bash
-$ g++ -std=c++14 cold.cpp
+  g++ -std=c++14 cold.cpp
 ```
 
 - run unit testing; user provided test cases
 - on Mac/Linux:
 
 ```bash
-$ ./a.out test
+  ./a.out test
 ```
 
 - on Windows:
 
 ```bash
-> a.exe test
+  a.exe test
 ```
 
 - run kattis provided sample test cases e.g. if 1.in and 1.ans are sample test files:
 - on Mac/Linux/WSL Terminal
 
 ```bash
-$ cat 1.in | ./a.out | diff - 1.ans
+  cat 1.in | ./a.out | diff - 1.ans
 ```
 
 - on Windows cmd prompt:
 
 ```bash
-> type 1.in | a.exe > out1.txt
-> FC out1.txt 1.ans
+  > type 1.in | a.exe > out1.txt
+  > FC out1.txt 1.ans
 ```
 
 ## Python3
@@ -61,26 +61,27 @@ $ cat 1.in | ./a.out | diff - 1.ans
 - change working directory to a problem folder, e.g.,
 
 ```bash
-$ cd cold
+  cd cold/python3
 ```
 
 - run unit testing; user provided test cases
 
 ```bash
-$ python3 cold.py test
+  python3 cold.py test
+  python3 test_cold.py
 ```
 
 - run kattis provided sample test cases e.g. if 1.in and 1.ans are sample test files
 
 ```bash
-$ cat 1.in | python3 cold.py | diff - 1.ans
+  cat 1.in | python3 cold.py | diff - 1.ans
 ```
 
 - on Windows cmd prompt
 
 ```bash
-> type 1.in | python3 cold.py > out1.txt
-> FC out1.txt 1.ans
+  type 1.in | python3 cold.py > out1.txt
+  FC out1.txt 1.ans
 ```
 
 ## NodeJS
@@ -89,27 +90,27 @@ $ cat 1.in | python3 cold.py | diff - 1.ans
 - change working directory to a problem folder, e.g.
 
 ```bash
-$ cd cold
+  cd cold
 ```
 
 - run unit testing; user provided test cases
 
 ```bash
-$ node cold.js test
+  node cold.js test
 ```
 
 - run kattis provided sample test cases e.g. if 1.in and 1.ans are sample test files
 - on Mac/Linux Terminal
 
 ```bash
-$ cat 1.in | node cold.js | diff - 1.ans
+  cat 1.in | node cold.js | diff - 1.ans
 ```
 
 - on Windows cmd prompt:
 
 ```bash
-> type 1.in | node cold.js > out1.txt
-> FC out1.txt 1.ans
+  type 1.in | node cold.js > out1.txt
+  FC out1.txt 1.ans
 ```
 
 ## C
@@ -118,33 +119,33 @@ $ cat 1.in | node cold.js | diff - 1.ans
 - change working directory to a problem folder, e.g.
 
 ```bash
-$ cd cold
+  cd cold
 ```
 
-- compile using g++
+- compile using gcc
 
 ```bash
-$ gcc cold.c
+  gcc cold.c
 ```
 
 - run unit testing; user provided test cases
 
 ```bash
-$ ./a.out test
+  ./a.out test
 ```
 
 - run kattis provided sample test cases e.g. if 1.in and 1.ans are sample test files
 - on Mac/Linux Terminal:
 
 ```bash
-$ cat 1.in | ./a.out | diff - 1.ans
+  cat 1.in | ./a.out | diff - 1.ans
 ```
 
 - on Windows cmd prompt
 
 ```bash
-> type 1.in | a.out > out1.txt
-> FC out1.txt 1.ans
+  type 1.in | a.out > out1.txt
+  FC out1.txt 1.ans
 ```
 
 ## Java

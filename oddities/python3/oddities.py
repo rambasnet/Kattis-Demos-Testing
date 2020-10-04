@@ -11,12 +11,13 @@ def answer(num):
 def test():
     assert answer(101) == 'is odd'
     assert answer(2323530) == 'is even'
+    print('all test cases passed...')
 
 def solve():
     tests = int(sys.stdin.readline())
     for i in range(tests):
         num = int(sys.stdin.readline())
-        print(num, answer(num));
+        print(num, answer(num))
 
 if __name__ == "__main__":
     if len(sys.argv) > 1 and sys.argv[1] == 'test':
