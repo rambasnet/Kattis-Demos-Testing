@@ -22,10 +22,11 @@ Demo solutions using automated testing for some problems from [https://open.katt
   cd cold/C++
 ```
 
-- compile using g++
+- compile using g++ or use provided Makefile
 
 ```bash
   g++ -std=c++14 cold.cpp
+  make
 ```
 
 - run unit testing; user provided test cases
@@ -33,6 +34,7 @@ Demo solutions using automated testing for some problems from [https://open.katt
 
 ```bash
   ./a.out test
+  make unit_tests
 ```
 
 - on Windows:
@@ -46,6 +48,7 @@ Demo solutions using automated testing for some problems from [https://open.katt
 
 ```bash
   cat 1.in | ./a.out | diff - 1.ans
+  make kattis_tests
 ```
 
 - on Windows cmd prompt:
