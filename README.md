@@ -1,6 +1,6 @@
 # Kattis Demos
 
-Demo solutions using automated testing for some problems from [https://open.kattis.com](https://open.kattis.com)
+Demo solutions with unit testing for some problems from [https://open.kattis.com](https://open.kattis.com)
 
 ## Requirements
 
