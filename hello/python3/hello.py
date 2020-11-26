@@ -5,7 +5,8 @@
 import sys
 
 def answer():
-    return "Hello World!"
+    a = "Hello World!"
+    return a
 
 def solve():
     print(answer())
