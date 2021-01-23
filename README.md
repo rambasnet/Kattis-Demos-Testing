@@ -97,9 +97,12 @@ Demo solutions with unit testing for some problems from [https://open.kattis.com
 ```
 
 - run unit testing; user provided test cases
+- uses Jest Unit Testing Framework
 
 ```bash
+  npm install
   node cold.js test
+  npm run test
 ```
 
 - run kattis provided sample test cases e.g. if 1.in and 1.ans are sample test files

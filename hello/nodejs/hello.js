@@ -25,3 +25,7 @@ if (require.main == module) {
     else
         solve();
 }
+
+module.exports = {
+    answer: answer
+};

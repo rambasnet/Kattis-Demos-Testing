@@ -37,3 +37,7 @@ if (require.main == module) {
     if (process.argv.length > 2 && process.argv[2] === "test") test();
     else solve();
 }
+
+module.exports = {
+    answer: answer
+};
