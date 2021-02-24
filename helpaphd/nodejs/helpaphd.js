@@ -44,9 +44,25 @@ function solve() {
   });
 }
 
+function solve1() {
+  const fs = require('fs')
+  const data = fs.readFileSync(process.stdin.fd, 'utf-8')
+  //console.log(data.toString());
+  let ans = [];
+  let lines = data.split('\n')
+  //console.log(lines)
+  let N = parseInt(lines[0]);
+  for (let index in lines) {
+    if (index == 0) continue;
+    else if (index > N) break;
+    else ans.push(answer(lines[index]));
+  }
+  console.log(ans.join("\n"));
+}
+
 if (require.main == module) {
   if (process.argv.length > 2 && process.argv[2] == 'test') test();
-  else solve();
+  else solve1();
 }
 
 module.exports = {
