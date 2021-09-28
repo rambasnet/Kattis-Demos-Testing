@@ -31,6 +31,7 @@
 *.out
 *.app
 *.bin
+*.pyc
 
 # ignore visual studio stuff
 .vscode/
@@ -38,3 +39,4 @@
 
 *.log
 node_modules
+
