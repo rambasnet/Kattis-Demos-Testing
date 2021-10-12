@@ -30,11 +30,11 @@ Demo solutions with unit testing for some problems from [https://open.kattis.com
 ```
 
 - run unit testing; user provided test cases
-- on Mac/Linux:
+- on Mac/Linux, either run the program with test argument or use the provided Makefile
 
 ```bash
   ./a.out test
-  make unit_tests
+  make unit_test
 ```
 
 - on Windows:
@@ -48,7 +48,7 @@ Demo solutions with unit testing for some problems from [https://open.kattis.com
 
 ```bash
   cat 1.in | ./a.out | diff - 1.ans
-  make kattis_tests
+  make kattis_test
 ```
 
 - on Windows cmd prompt:

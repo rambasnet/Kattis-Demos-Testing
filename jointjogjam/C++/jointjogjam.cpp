@@ -29,7 +29,7 @@ void test_distance() {
   assert(distance(0, 0, 2, 2) - ans <= MAX_ERROR);
   ans = 48.6004115209;
   assert(distance(1, 30, 6, 45) - ans <= MAX_ERROR);
-  printf("Congrtulations! All test cases passed...\n");
+  printf("Congrtulations! All test cases passed distance()\n");
 }
 
 void test_answer() {

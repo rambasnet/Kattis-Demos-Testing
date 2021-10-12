@@ -6,10 +6,10 @@ CPP_FILES = oddities.cpp
 build:
 	$(COMPILER) $(COMPILER_FLAGS) $(CPP_FILES) -o $(PROGRAM_NAME)
 
-unit_tests:
+unit_test:
 	./$(PROGRAM_NAME) test
 
-kattis_tests:
+kattis_test:
 	cat ../1.in | ./$(PROGRAM_NAME) | diff - ../1.ans
 	echo "all Kattis sample tests cases passed..."
 

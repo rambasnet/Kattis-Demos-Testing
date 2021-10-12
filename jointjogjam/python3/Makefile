@@ -1,4 +1,4 @@
-PROGRAM_NAME = joingjogjam.py
+PROGRAM_NAME = jointjogjam.py
 TEST_SCRIPT	= simple_test.py
 
 local_test:
