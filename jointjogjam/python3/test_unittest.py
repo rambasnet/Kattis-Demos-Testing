@@ -45,7 +45,5 @@ class Test_jointjogjam(unittest.TestCase):
     actual = 5
     self.assertAlmostEqual(answer(startDist, endDist), actual, PLACES)
 
-
-
 if __name__ == "__main__":
   unittest.main(verbosity=2)
