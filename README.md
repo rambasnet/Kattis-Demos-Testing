@@ -8,6 +8,12 @@ Demo solutions with unit testing for some problems from [https://open.kattis.com
 - On Windows g++ compiler is required to compile and run C and C++ code from command prompt
   - g++ compiler for Windows can be downloaded from [https://nuwen.net/mingw.html](https://nuwen.net/mingw.html); extract it into C:\ drive as shown in the instructions here: [https://nuwen.net/mingw.html#install](https://nuwen.net/mingw.html#install)
 
+- pytest Python3 package
+
+```bash
+pip3 install -U pytest
+```
+
 ## Programming Languages
 
 - demos are provided in the following several languages
@@ -67,11 +73,14 @@ Demo solutions with unit testing for some problems from [https://open.kattis.com
   cd cold/python3
 ```
 
-- run unit testing; user provided test cases
+- run unit tests; user provided test cases
+- several different ways...
 
 ```bash
   python3 cold.py test
   python3 test_cold.py
+  python3 test_test_cold.py
+  pytest # make sure pytest is installed
 ```
 
 - run kattis provided sample test cases e.g. if 1.in and 1.ans are sample test files

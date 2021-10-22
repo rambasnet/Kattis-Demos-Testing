@@ -1,21 +1,16 @@
-#! /usr/bin/env python3
+#!/ usr/bin/env python3
 
 """
-unittest for hello solution
+separate test file for pytest
+pytest recursively discovers all the files with test* and runs the
+assert statements in them
 """
 
-__author__ = "Ram Basnet"
-__copyright__ = "Copyright 2020"
-__license__ = "MIT"
-
-import unittest
 from hello import answer
 
-class TestHello(unittest.TestCase):
-    def test1_answer(self):
-        self.assertEqual(answer(), 'Hello World!', "Test failed...")
-
+def test_answer():
+    assert answer() == "Hello World!"
+    print('all test cases passed...')
 
 if __name__ == "__main__":
-    unittest.main(verbosity=2)
-
+  test_answer()
