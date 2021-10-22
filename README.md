@@ -1,4 +1,4 @@
-# Kattis Demos
+# Kattis Demos with Unit Testing
 
 Demo solutions with unit testing for some problems from [https://open.kattis.com](https://open.kattis.com)
 
@@ -8,7 +8,7 @@ Demo solutions with unit testing for some problems from [https://open.kattis.com
 - On Windows g++ compiler is required to compile and run C and C++ code from command prompt
   - g++ compiler for Windows can be downloaded from [https://nuwen.net/mingw.html](https://nuwen.net/mingw.html); extract it into C:\ drive as shown in the instructions here: [https://nuwen.net/mingw.html#install](https://nuwen.net/mingw.html#install)
 
-- pytest Python3 package
+- pytest Python3 package for testing Python3 solutions
 
 ```bash
 pip3 install -U pytest
