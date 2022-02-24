@@ -109,9 +109,10 @@ pip3 install -U pytest
 - uses Jest Unit Testing Framework
 
 ```bash
-  npm install
-  node cold.js test
-  npm run test
+  make
+  make run local_test
+  make run kattis_test
+
 ```
 
 - run kattis provided sample test cases e.g. if 1.in and 1.ans are sample test files

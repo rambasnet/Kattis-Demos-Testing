@@ -11,7 +11,7 @@ function solve() {
     console.log(answer());
 }
 
-if (require.main == module) {
+if (require.main === module) {
     //console.log(process.argv);
     solve();
 }
