@@ -13,3 +13,4 @@ kattis_test:
 clean:
 	rm -rf __pycache__
 	rm -f *.pyc
+	

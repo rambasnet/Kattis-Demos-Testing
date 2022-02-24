@@ -13,12 +13,6 @@ function answer(sides) {
   else return 'wrong';
 }
 
-function test() {
-  assert.strictEqual(answer([1, 2, 3]), 'wrong', 'assertion failed for wrong');
-  assert.strictEqual(answer([12, 5, 13]), 'right');
-  console.log('all test cases passed!');
-}
-
 function solve() {
   const rl = readline.createInterface({
     input: process.stdin,
@@ -35,8 +29,7 @@ function solve() {
 }
 
 if (require.main == module) {
-  if (process.argv.length > 2 && process.argv[2] === 'test') test();
-  else solve();
+  solve();
 }
 
 module.exports = {

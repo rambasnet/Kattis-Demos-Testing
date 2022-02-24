@@ -11,13 +11,6 @@ function answer(line) {
   return parseInt(values[0])+parseInt(values[1]);
 }
 
-function test() {
-  assert.strictEqual(answer("P=NP"), 'skipped', 'assertion error for P=NP');
-  assert.strictEqual(answer('2+10'), 12);
-  assert.strictEqual(answer('0+1000'), 1000);
-  console.log('all test cases passed...');
-}
-
 function solve() {
   const rl = readline.createInterface({
     input: process.stdin,
@@ -61,8 +54,7 @@ function solve1() {
 }
 
 if (require.main == module) {
-  if (process.argv.length > 2 && process.argv[2] == 'test') test();
-  else solve1();
+  solve1();
 }
 
 module.exports = {
