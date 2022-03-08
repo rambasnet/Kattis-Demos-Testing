@@ -4,7 +4,8 @@
   "description": "",
   "main": "helpaphd.js",
   "scripts": {
-    "test": "jest"
+    "test": "jest",
+    "kattis_test": "cat ../1.in | node helpaphd.js | diff - ../1.ans && echo \"All Kattis sample tests cases passed...\""
   },
   "keywords": [],
   "author": "",
