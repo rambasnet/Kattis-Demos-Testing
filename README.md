@@ -99,20 +99,16 @@ pip3 install -U pytest
 ## NodeJS
 
 - open a terminal on Mac/Linux/WSL or cmd prompt on Windows
-- change working directory to a problem folder, e.g.
+- change working directory to a problem folder
+- run unit testing with your own test cases
+- uses Jest Unit Testing Framework
+- run the following commands on a Terminal
 
 ```bash
   cd cold
-```
-
-- run unit testing; user provided test cases
-- uses Jest Unit Testing Framework
-
-```bash
-  make
-  make run local_test
-  make run kattis_test
-
+  npm install
+  npm run jest
+  npm run kattis_test
 ```
 
 - run kattis provided sample test cases e.g. if 1.in and 1.ans are sample test files
@@ -145,6 +141,7 @@ pip3 install -U pytest
 ```
 
 - run unit testing; user provided test cases
+- write and use a Makefile as demonstrated in C++ section
 
 ```bash
   ./a.out test
