@@ -42,7 +42,7 @@ function solve1() {
   const data = fs.readFileSync(process.stdin.fd, 'utf-8')
   //console.log(data);
   let ans = [];
-  let lines = data.split('\n')
+  let lines = data.split('\n');
   //console.log(lines)
   let N = parseInt(lines[0]);
   for (let index in lines) { // index is of type string
@@ -56,7 +56,7 @@ function solve1() {
   console.log(ans.join("\n"));
 }
 
-if (require.main == module) {
+if (require.main === module) {
   //solve();
   solve1();
 }
