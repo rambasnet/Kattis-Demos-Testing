@@ -2,10 +2,17 @@
 
 "use strict";
 
+// parse and evalute equations
 function answer(line) {
   if (line[0] == 'P') return 'skipped';
   let values = line.split('+');
   return parseInt(values[0])+parseInt(values[1]);
+}
+
+// run eval function, though dangerous to use in real-world, it's okay for Kattis problems
+function answer1(line) {
+  if (line.startsWith('P')) return 'skipped';
+  else return eval(line);
 }
 
 // read data asynchronously
@@ -51,7 +58,7 @@ function solve1() {
     //console.log(index, lines[index])
     if (index === 0) continue;
     else if (index > N) break;
-    else ans.push(answer(lines[index]));
+    else ans.push(answer1(lines[index]));
   }
   console.log(ans.join("\n"));
 }
