@@ -17,7 +17,7 @@ function solve() {
   });
 
   let lineNum = 0;
-  let ans = []
+  let ans = [];
   let totalLines = 0;
   rl.on('line', (line) => {
     if (lineNum == 0) {
@@ -45,8 +45,11 @@ function solve1() {
   let lines = data.split('\n')
   //console.log(lines)
   let N = parseInt(lines[0]);
-  for (let index in lines) {
-    if (index == 0) continue;
+  for (let index in lines) { // index is of type string
+    //console.log(typeof index)
+    index = parseInt(index)
+    //console.log(index, lines[index])
+    if (index === 0) continue;
     else if (index > N) break;
     else ans.push(answer(lines[index]));
   }
