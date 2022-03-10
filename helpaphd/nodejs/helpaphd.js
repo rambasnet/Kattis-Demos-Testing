@@ -2,16 +2,15 @@
 
 "use strict";
 
-const assert = require('assert').strict;
-const readline = require('readline')
-
 function answer(line) {
   if (line[0] == 'P') return 'skipped';
   let values = line.split('+');
   return parseInt(values[0])+parseInt(values[1]);
 }
 
+// read data asynchronously
 function solve() {
+  const readline = require('readline')
   const rl = readline.createInterface({
     input: process.stdin,
     output: process.stdout
@@ -37,10 +36,11 @@ function solve() {
   });
 }
 
+// read data synchronously
 function solve1() {
   const fs = require('fs')
   const data = fs.readFileSync(process.stdin.fd, 'utf-8')
-  //console.log(data.toString());
+  //console.log(data);
   let ans = [];
   let lines = data.split('\n')
   //console.log(lines)
@@ -54,6 +54,7 @@ function solve1() {
 }
 
 if (require.main == module) {
+  //solve();
   solve1();
 }
 

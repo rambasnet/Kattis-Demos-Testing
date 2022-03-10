@@ -3,15 +3,14 @@
 // force secure JS
 "use strict"; //  https://www.w3schools.com/js/js_strict.asp
 
-const readline = require("readline")
-const assert = require("assert").strict
-
 function answer(num) {
     if (num % 2 == 0) return "is even";
     else return "is odd";
 }
 
+// async reading line by line
 function solve() {
+    const readline = require("readline");
     const rl = readline.createInterface({
         input: process.stdin,
         output: process.stdout
@@ -26,9 +25,25 @@ function solve() {
     })
 }
 
+//sync reading the whole data
+function solve1() {
+    const fs = require('fs');
+    let data = fs.readFileSync(process.stdin.fd, 'utf-8');
+    let lines = data.split('\n');
+    //console.log(lines);
+    let ans = [];
+    for(let i in lines) { // i is string not a integer!
+        i = parseInt(i);
+        if (i === 0 || i+1 >= lines.length) continue;
+        ans.push(`${lines[i]} ${answer(parseInt(lines[i]))}`);
+    }
+    console.log(ans.join('\n'));
+}
+
 // check if module is ran as the main module
 if (require.main == module) {
-    solve();
+    //solve();
+    solve1();
 }
 
 module.exports = {
