@@ -12,6 +12,9 @@ import unittest
 from cold import answer, answer1
 
 class TestCold(unittest.TestCase):
+    """
+    test cases must start with test and must be a method
+    """
     def test1_answer(self):
         data = [12, -4, -56, -4544545, 64, 46464]
         self.assertEqual(answer(data), 3, 'broken')

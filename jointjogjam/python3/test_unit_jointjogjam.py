@@ -14,6 +14,9 @@ from jointjogjam import answer, distance
 PLACES = 6
 
 class Test_jointjogjam(unittest.TestCase):
+  """
+  test cases must start with test and must be a method
+  """
   def test1_distance(self):
     ans = distance(0, 0, 1, 1)
     actual = 1.41421356237

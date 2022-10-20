@@ -10,6 +10,9 @@ import unittest
 from helpaphd import answer
 
 class TestHelpAPhD(unittest.TestCase):
+    """
+    test cases must start with test and must be a method
+    """
     def test1_answer(self):
         self.assertEqual(answer('P=NP'), 'skipped', 'broken')
     

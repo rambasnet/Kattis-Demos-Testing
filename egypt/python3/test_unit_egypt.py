@@ -12,6 +12,9 @@ import unittest
 from egypt import answer
 
 class TestEgypt(unittest.TestCase):
+    """
+    test cases must start with test and must be a method
+    """
     def test1_answer(self):
         input1 = [8, 6, 10]
         self.assertEqual(answer(input1), "right", "broken")
