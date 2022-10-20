@@ -79,8 +79,9 @@ pip3 install -U pytest
 ```bash
   python3 cold.py test
   python3 test_cold.py
-  python3 test_test_cold.py
+  python3 test_unit_cold.py
   pytest # make sure pytest is installed
+  python3 -m unittest
 ```
 
 - run kattis provided sample test cases e.g. if 1.in and 1.ans are sample test files
