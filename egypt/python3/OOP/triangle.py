@@ -10,7 +10,7 @@ Triangle class
 
 from typing import List
 
-class Triangle:
+class Triangle(object):
 	"""
 	Triangle class
 	"""
