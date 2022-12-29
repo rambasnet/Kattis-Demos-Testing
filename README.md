@@ -12,6 +12,7 @@ Demo solutions with unit testing for some problems from [https://open.kattis.com
 
 ```bash
 pip3 install -U pytest
+pip3 install -U mypy
 ```
 
 ## Programming Languages
@@ -82,6 +83,20 @@ pip3 install -U pytest
   python3 test_unit_cold.py
   pytest # make sure pytest is installed
   python3 -m unittest
+```
+
+### Testing Python OOP solutions
+
+- open terminal 
+- change current working directory to OOP folder inside problem/python3 folder
+- run the following commands
+
+```bash
+  mypy --strict <module>.py
+  mypy --strict test_<module>.py
+  pytest
+  python3 -m unittest
+  python3 test_<module>.py
 ```
 
 - run kattis provided sample test cases e.g. if 1.in and 1.ans are sample test files

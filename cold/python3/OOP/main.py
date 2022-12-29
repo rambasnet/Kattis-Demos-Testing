@@ -11,45 +11,52 @@ https://open.kattis.com/problems/cold
 """
 
 import sys
-from Temperature import Temperature
-from typing import Any
+from temperature import Temperature
+from typing import Any, List
 
 class Solution(object):
-	def __init__(self):
+	def __init__(self) -> None:
 		"""
 		Represents a solution to the problem
 		"""
-		self.n = 0 # number of temperatures
-		self.data = None
-		self.temps = [] # list of temperatures
+		self.__n: int = 0 # number of temperatures
+		self.__data: str = '' # data
+		self.__temps: List[Temperature]  = [] # list of temperatures
 
 	def findAnswer(self) -> int:
 		"""
 		Counts the number of temperatures below zero
 		:return: number of temperatures below zero"""
 		count = 0
-		for t in self.temps:
+		for t in self.__temps:
 			if t.isNegative():
 				count += 1
 		return count
 
-	def readData(self, source) -> None:
+	def readData(self, source: Any) -> None:
 		"""
 		Reads data from stdin
 		return: None
 		"""
 		# ignore the first line
 		data = source.readlines()
-		self.n = int(data[0])
-		self.data = data[1].strip()
-		self.temps = [Temperature(int(i)) for i in self.data.split()]
+		self.__n = int(data[0])
+		self.__data = data[1].strip()
+		self.__temps = [Temperature(int(i)) for i in self.__data.split()]
 	
+	def getN(self) -> int:
+		"""
+		Returns the number of temperatures
+		:return: number of temperatures
+		"""
+		return self.__n
+
 	def getData(self) -> str:
 		"""
 		Returns the data
 		:return: data
 		"""
-		return self.data
+		return self.__data
 
 	def solve(self, source: Any) -> None:
 		"""

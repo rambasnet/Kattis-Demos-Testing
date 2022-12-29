@@ -1,5 +1,5 @@
 __author__ = "Ram Basnet"
-__date__ = "2022/1/1"
+__date__ = "2023/1/1"
 __license__ = "MIT"
 __version__ = "0.1.0"
 __maintainer__ = "Ram Basnet"
@@ -12,7 +12,7 @@ class HelloWorld:
 	"""
 	Hello World Program using OOP
 	"""
-	def __init__(self):
+	def __init__(self) -> None:
 		"""
 		Constructor
 		"""
