@@ -1,9 +1,9 @@
 #! /usr/bin/env python3
 
 import sys
+from typing import List
 
-
-def answer(data):
+def answer(data: List) -> int:
     count = 0
     for t in data:
         if t < 0:
@@ -11,11 +11,10 @@ def answer(data):
     return count
 
 
-def answer1(line):
+def answer1(line: str) -> int:
     return line.count('-')
 
-
-def solve():
+def solve() -> None:
     #n = int(input())
     #temps = [int(n) for n in input().split()]
     data = sys.stdin.readlines()
@@ -25,7 +24,7 @@ def solve():
     print(answer1(data[1]))
 
 
-def test():
+def test() -> None:
     assert answer([12, -4, -56, -4544545, 64, 46464]) == 3
     assert answer([0, 453445, -1, -100, -45454, -44445]) == 4
     assert answer1('0 453445 -1 -100 -45454 -44445') == 4
