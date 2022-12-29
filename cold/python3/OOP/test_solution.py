@@ -71,17 +71,28 @@ class TestSolution(unittest.TestCase):
 		expected = self.sol.findAnswer()
 		self.assertEqual(expected, 5)
 
-	@patch('sys.stdout', new_callable=StringIO)
-	@patch('sys.stderr', new_callable=StringIO)
-	def test_solve(self, mock_stdout, mock_stderr):
+	#@patch('sys.stdout', new_callable=StringIO)
+	#@patch('sys.stderr', new_callable=StringIO)
+	def test_solve1(self):
 		"""
-		Tests solve method
+		Tests solve method - using patch context manager
+		- tests 1.in
 		:return: None
 		"""
 		#self.sol.solve()
-		self.sol.solve(self.input1)
-		self.assertEqual(mock_stdout.getvalue(), '1')
-		
+		with patch('sys.stdout', new=StringIO()) as mock_stdout:
+			self.sol.solve(self.input1)
+			self.assertEqual(mock_stdout.getvalue(), '1\n')
 
+	@patch('sys.stdout', new_callable=StringIO)
+	def test_solve2(self, mock_stdout):
+		"""
+		Tests solve method - using patch decorator
+		- tests 2.in
+		:return: None
+		"""
+		self.sol.solve(self.input2)
+		self.assertEqual(mock_stdout.getvalue(), '5\n')
+		
 if __name__ == "__main__":
 	unittest.main(verbosity=2)

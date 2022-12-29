@@ -58,6 +58,7 @@ class Solution(object):
 		"""
 		self.readData(source)
 		print(self.findAnswer())
+		#sys.stdout.write('1')
 
 if __name__ == "__main__":
 		sol = Solution()
