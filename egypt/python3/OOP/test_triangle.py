@@ -12,7 +12,6 @@ import unittest
 from triangle import Triangle
 from unittest.mock import patch
 
-
 class TestTriangle(unittest.TestCase):
 	"""
 	Unittesting Triangle class
