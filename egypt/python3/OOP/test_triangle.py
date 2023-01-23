@@ -30,44 +30,44 @@ class TestTriangle(unittest.TestCase):
 		Tests getPerimeter method
 		:return: None
 		"""
-		self.assertEqual(self.triangle.getPerimeter(), 12)
+		self.assertEqual(self.triangle.perimeter, 12)
 
 	def test_getArea(self) -> None:
 		"""
 		Tests getArea method
 		:return: None
 		"""
-		self.assertEqual(self.triangle.getArea(), 6)
+		self.assertEqual(self.triangle.area, 6)
 
 	def test_getSides(self) -> None:
 		"""
 		Tests getSides method
 		:return: None
 		"""
-		self.assertEqual(self.triangle.getSides(), [3, 4, 5])
+		self.assertEqual(self.triangle.sides, [3, 4, 5])
 
 	def test_isRightAngled(self) -> None:
 		"""
 		Tests isRight method
 		:return: None
 		"""
-		self.assertTrue(self.triangle.isRightAngled())
+		self.assertTrue(self.triangle.is_right_angled())
 
 	def test_isRightAngled2(self) -> None:
 		"""
 		Tests isRight method
 		:return: None
 		"""
-		self.triangle.setSides(3, 4, 6)
-		self.assertFalse(self.triangle.isRightAngled())
+		self.triangle.set_sides(3, 4, 6)
+		self.assertFalse(self.triangle.is_right_angled())
 
 	def test_isRightAngled3(self) -> None:
 		"""
 		Tests isRight method
 		:return: None
 		"""
-		self.triangle.setSides(3, 4, 7)
-		self.assertFalse(self.triangle.isRightAngled())
+		self.triangle.set_sides(3, 4, 7)
+		self.assertFalse(self.triangle.is_right_angled())
 
 
 if __name__ == '__main__':

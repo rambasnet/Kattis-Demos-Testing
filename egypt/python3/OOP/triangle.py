@@ -18,11 +18,11 @@ class Triangle(object):
 		"""
 		Constructor
 		"""
-		self.__side1:float = side1
-		self.__side2:float = side2
-		self.__side3:float = side3
+		self._side1:float = side1
+		self._side2:float = side2
+		self._side3:float = side3
 
-	def setSides(self, side1:float, side2:float, side3:float) -> None:
+	def set_sides(self, side1:float, side2:float, side3:float) -> None:
 		"""
 		Sets the sides of the triangle
 		:param side1: side1
@@ -30,31 +30,34 @@ class Triangle(object):
 		:param side3: side3
 		:return: None
 		"""
-		self.__side1 = side1
-		self.__side2 = side2
-		self.__side3 = side3
+		self._side1 = side1
+		self._side2 = side2
+		self._side3 = side3
 
-	def getSides(self) -> List[float]:
+	@property
+	def sides(self) -> List[float]:
 		"""
 		Returns the sides of the triangle
 		:return: sides
 		"""
-		return [self.__side1, self.__side2, self.__side3]
+		return [self._side1, self._side2, self._side3]
 
-	def getPerimeter(self) -> float:
+	@property
+	def perimeter(self) -> float:
 		"""
 		Returns the perimeter of the triangle
 		:return: perimeter
 		"""
-		return self.__side1 + self.__side2 + self.__side3
+		return self._side1 + self._side2 + self._side3
 
-	def getArea(self) -> float:
+	@property
+	def area(self) -> float:
 		"""
 		Returns the area of the triangle - Heron's formula
 		:return: area
 		"""
-		s:float = self.getPerimeter() / 2
-		ans:float = (s * (s - self.__side1) * (s - self.__side2) * (s - self.__side3)) ** 0.5
+		s:float = self.perimeter / 2
+		ans:float = (s * (s - self._side1) * (s - self._side2) * (s - self._side3)) ** 0.5
 		return ans
 
 	def __str__(self) -> str:
@@ -62,7 +65,7 @@ class Triangle(object):
 		Returns the string representation of the object
 		:return: string representation
 		"""
-		return 'Triangle: side1 = ' + str(self.__side1) + ' side2 = ' + str(self.__side2) + ' side3 = ' + str(self.__side3)
+		return 'Triangle: side1 = ' + str(self._side1) + ' side2 = ' + str(self._side2) + ' side3 = ' + str(self._side3)
 
 	def __repr__(self) -> str:
 		"""
@@ -71,12 +74,12 @@ class Triangle(object):
 		"""
 		return self.__str__()
 
-	def isRightAngled(self) -> bool:
+	def is_right_angled(self) -> bool:
 		"""
 		Returns whether the triangle is right angled or not
 		:return: True if right angled, False otherwise
 		"""
-		sides = [self.__side1, self.__side2, self.__side3]
+		sides = [self._side1, self._side2, self._side3]
 		sides.sort()
 		return sides[0] ** 2 + sides[1] ** 2 == sides[2] ** 2
 
