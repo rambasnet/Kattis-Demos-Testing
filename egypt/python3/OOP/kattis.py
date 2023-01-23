@@ -8,6 +8,8 @@ class Kattis(ABC):
 	def __init__(self, data_source: Any) -> None:
 		"""
 		Constructor
+		:param data_source: input data source object
+		:return: None
 		"""
 		self._input_source: Any = data_source
 		self._data: Any = None
