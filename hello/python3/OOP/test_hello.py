@@ -25,12 +25,12 @@ class TestHelloWorld(unittest.TestCase):
 		self.hello = HelloWorld()
 
 	@patch('sys.stdout', new_callable=StringIO)
-	def test_printMessage(self, mock_stdout: StringIO) -> None:
+	def test_print_message(self, mock_stdout: StringIO) -> None:
 		"""
 		Tests printMessage method
 		:return: None
 		"""
-		self.hello.printMessage()
+		self.hello.print_message()
 		self.assertEqual(mock_stdout.getvalue(), 'Hello World!\n')
 
 	def test_getMessage(self) -> None:
@@ -38,7 +38,11 @@ class TestHelloWorld(unittest.TestCase):
 		Tests getMessage method
 		:return: None
 		"""
-		self.assertEqual(self.hello.getMessage(), 'Hello World!')
+		self.assertEqual(self.hello.get_message(), 'Hello World!')
+
+	def test_message(self) -> None:
+		self.assertEqual(self.hello.message, 'Hello World!')
+		
 
 if __name__ == '__main__':
 	unittest.main(verbosity=2)

@@ -8,27 +8,34 @@ __maintainer__ = "Ram Basnet"
 Hello World Class
 """
 
-class HelloWorld:
+class HelloWorld(object):
 	"""
-	Hello World Program using OOP
+	Hello World program using OOP
 	"""
 	def __init__(self) -> None:
 		"""
 		Constructor
 		"""
-		self.message = 'Hello World!'
+		self._message = 'Hello World!'
 
-	def printMessage(self) -> None:
+	def print_message(self) -> None:
 		"""
 		Prints the message
 		:return: None
 		"""
 		print(self.message)
 
-	def getMessage(self) -> str:
+	def get_message(self) -> str:
 		"""
 		Returns the message
 		:return: message
 		"""
-		return self.message
+		return self._message
+
+	@property
+	def message(self):
+		"""
+		Property getmethod
+		"""
+		return self._message
 

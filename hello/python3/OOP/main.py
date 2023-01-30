@@ -6,23 +6,37 @@ __maintainer__ = "Ram Basnet"
 
 from hello import HelloWorld
 
-class Solution(object):
+class Main(object):
 	"""
-	Solution class
+	Singleton class Main
 	"""
+	_instance: 'Main' = None
+
 	def __init__(self) -> None:
 		"""
 		Constructor
 		"""
-		self.hello = HelloWorld()
+		if Main._instance:
+			raise Exception("Cannot create multiple instances of a singleton class Main")
+		self._solution: HelloWorld = HelloWorld()
+		Main._instance = self
 
 	def solve(self) -> None:
 		"""
 		Solves the problem
 		:return: None
 		"""
-		self.hello.printMessage()
+		self._solution.print_message()
+
+	@classmethod
+	def get_instance(cls):
+		if not cls._instance:
+				cls._instance = Main()
+		return cls._instance
 
 if __name__ == '__main__':
-	solution = Solution()
-	solution.solve()
+	main = Main()
+	main.solve()
+	#main = Main()
+	#main = Main.get_instance()
+	#main.solve()
