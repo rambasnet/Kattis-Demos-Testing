@@ -23,12 +23,12 @@ class HelloWorld(object):
 		Prints the message
 		:return: None
 		"""
-		print(self.message)
+		print(self._message)
 
 	def get_message(self) -> str:
 		"""
 		Returns the message
-		:return: message
+		:return: _message
 		"""
 		return self._message
 
