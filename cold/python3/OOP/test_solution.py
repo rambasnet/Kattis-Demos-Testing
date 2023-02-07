@@ -40,26 +40,26 @@ class TestSolution(unittest.TestCase):
 		Tests readData method
 		:return: None
 		"""
-		self.sol.readData(self.input1)
+		self.sol.read_data(self.input1)
 		self.assertEqual(self.sol.getN(), 3)
-		self.assertEqual(self.sol.getData(), '5 -10 15')
+		self.assertEqual(self.sol.get_data(), '5 -10 15')
 
 	def test_readData2(self) -> None:
 		"""
 		Tests readData method
 		:return: None
 		"""
-		self.sol.readData(self.input2)
+		self.sol.read_data(self.input2)
 		self.assertEqual(self.sol.getN(), 5)
-		self.assertEqual(self.sol.getData(), '-14 -5 -39 -5 -7')
+		self.assertEqual(self.sol.get_data(), '-14 -5 -39 -5 -7')
 
 	def test_findAnswer1(self) -> None:
 		"""
 		Tests findAnswer method
 		:return: None
 		"""
-		self.sol.readData(self.input1)
-		expected = self.sol.findAnswer()
+		self.sol.read_data(self.input1)
+		expected = self.sol.find_answer()
 		self.assertEqual(expected, 1)
 
 	def test_findAnswer2(self) -> None:
@@ -67,8 +67,8 @@ class TestSolution(unittest.TestCase):
 		Tests findAnswer method
 		:return: None
 		"""
-		self.sol.readData(self.input2)
-		expected = self.sol.findAnswer()
+		self.sol.read_data(self.input2)
+		expected = self.sol.find_answer()
 		self.assertEqual(expected, 5)
 
 	#@patch('sys.stdout', new_callable=StringIO)

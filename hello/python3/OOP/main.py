@@ -5,20 +5,21 @@ __version__ = "0.1.0"
 __maintainer__ = "Ram Basnet"
 
 from hello import HelloWorld
+from typing import Optional
 
 class Main(object):
 	"""
 	Singleton class Main
 	"""
-	_instance: 'Main' = None
+	_instance = None
 
 	def __init__(self) -> None:
 		"""
-		Constructor
+		Constructor - uses single pattern
 		"""
 		if Main._instance:
 			raise Exception("Cannot create multiple instances of a singleton class Main")
-		self._solution: HelloWorld = HelloWorld()
+		self._solution: 'HelloWorld' = HelloWorld()
 		Main._instance = self
 
 	def solve(self) -> None:
@@ -29,7 +30,7 @@ class Main(object):
 		self._solution.print_message()
 
 	@classmethod
-	def get_instance(cls):
+	def get_instance(cls) -> 'Main':
 		if not cls._instance:
 				cls._instance = Main()
 		return cls._instance

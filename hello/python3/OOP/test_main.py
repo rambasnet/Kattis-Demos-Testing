@@ -23,7 +23,7 @@ class TestMain(unittest.TestCase):
 		:return: None
 		"""
 		# can't call Main() because it's a singleton class
-		self.main: Main = Main.get_instance()
+		self.my_main:  'Main'= Main.get_instance()
 
 	@patch('sys.stdout', new_callable=StringIO)
 	def test_solve(self, mock_stdout: StringIO) -> None:
@@ -31,7 +31,7 @@ class TestMain(unittest.TestCase):
 		Tests solve method
 		:return: None
 		"""
-		self.main.solve()
+		self.my_main.solve()
 		self.assertEqual(mock_stdout.getvalue(), 'Hello World!\n')
 
 	def test_get_instance(self) -> None:
@@ -39,8 +39,7 @@ class TestMain(unittest.TestCase):
 		Tests get_instance method
 		:return: None
 		"""
-		self.main: Main = Main.get_instance()
-		self.assertEqual(self.main.get_instance(), self.main)
+		self.assertIs(self.my_main.get_instance(), self.my_main)
 
 if __name__ == '__main__':
 	unittest.main(verbosity=2)

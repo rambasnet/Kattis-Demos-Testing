@@ -21,21 +21,25 @@ class HelloWorld(object):
 	def print_message(self) -> None:
 		"""
 		Prints the message
-		:return: None
 		"""
 		print(self._message)
 
 	def get_message(self) -> str:
 		"""
-		Returns the message
-		:return: _message
+		Returns the message - using getter method
+
+		Returns:
+			self._message (str): Message stored in the object
 		"""
 		return self._message
 
 	@property
-	def message(self):
+	def message(self) -> str:
 		"""
-		Property getmethod
+		Returns the message - using getter property
+
+		Returns:
+			self._message (str): Message stored in the object
 		"""
 		return self._message
 

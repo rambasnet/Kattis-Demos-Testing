@@ -11,6 +11,7 @@ https://open.kattis.com/problems/cold
 """
 
 import sys
+import functools
 from temperature import Temperature
 from typing import Any, List
 
@@ -19,52 +20,52 @@ class Solution(object):
 		"""
 		Represents a solution to the problem
 		"""
-		self.__n: int = 0 # number of temperatures
-		self.__data: str = '' # data
-		self.__temps: List[Temperature]  = [] # list of temperatures
+		self._n: int = 0 # number of temperatures
+		self._data: str = '' # data
+		self._temps: List[Temperature]  = [] # list of temperatures
 
-	def findAnswer(self) -> int:
+	def find_answer(self) -> int:
 		"""
 		Counts the number of temperatures below zero
 		:return: number of temperatures below zero"""
-		count = 0
-		for t in self.__temps:
-			if t.isNegative():
+		count = 0 
+		for t in self._temps:
+			if t.is_negative():
 				count += 1
 		return count
 
-	def readData(self, source: Any) -> None:
+	def read_data(self, source: Any) -> None:
 		"""
 		Reads data from stdin
 		return: None
 		"""
 		# ignore the first line
 		data = source.readlines()
-		self.__n = int(data[0])
-		self.__data = data[1].strip()
-		self.__temps = [Temperature(int(i)) for i in self.__data.split()]
+		self._n = int(data[0])
+		self._data = data[1].strip()
+		self._temps = [Temperature(int(i)) for i in self._data.split()]
 	
 	def getN(self) -> int:
 		"""
 		Returns the number of temperatures
 		:return: number of temperatures
 		"""
-		return self.__n
+		return self._n
 
-	def getData(self) -> str:
+	def get_data(self) -> str:
 		"""
 		Returns the data
 		:return: data
 		"""
-		return self.__data
+		return self._data
 
 	def solve(self, source: Any) -> None:
 		"""
 		Solves the problem
 		:return: None
 		"""
-		self.readData(source)
-		print(self.findAnswer())
+		self.read_data(source)
+		print(self.find_answer())
 		#sys.stdout.write('1')
 
 if __name__ == "__main__":
