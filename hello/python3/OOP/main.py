@@ -35,9 +35,17 @@ class Main(object):
 				cls._instance = Main()
 		return cls._instance
 
-if __name__ == '__main__':
+	@staticmethod
+	def main() -> None:
+		main = Main()
+		main.solve()
+
+def main() -> None:
 	main = Main()
 	main.solve()
+
+if __name__ == '__main__':
+	Main.main()
 	#main = Main()
 	#main = Main.get_instance()
 	#main.solve()

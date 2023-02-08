@@ -1,0 +1,10 @@
+@startuml
+scale 2
+title "UML Class Diagram"
+class HelloWorld {
+	-_message: str
+	+message: str
+	+print_message(): None
+	+get_message(): str
+}
+@enduml
