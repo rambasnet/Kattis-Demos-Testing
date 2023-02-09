@@ -20,6 +20,7 @@ class Main(object):
 	def __init__(self) -> None:
 		"""
 		Constructor - uses single pattern
+		
 		Returns:
 			None
 		"""
@@ -31,6 +32,7 @@ class Main(object):
 	def solve(self) -> None:
 		"""
 		Solves the problem
+		
 		:return: None
 		"""
 		self._solution.print_message()
