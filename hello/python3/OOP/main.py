@@ -7,6 +7,10 @@ __maintainer__ = "Ram Basnet"
 from hello import HelloWorld
 from typing import Optional
 
+"""
+Main manager class that manages HelloWorld
+"""
+
 class Main(object):
 	"""
 	Singleton class Main
