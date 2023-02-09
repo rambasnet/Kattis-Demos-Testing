@@ -5,12 +5,12 @@ __version__ = "0.1.0"
 __maintainer__ = "Ram Basnet"
 
 """
-Hello World Class
+Hello World Program using OOP
 """
 
 class HelloWorld(object):
 	"""
-	Hello World program using OOP
+	Hello World Class
 	"""
 	def __init__(self) -> None:
 		"""
