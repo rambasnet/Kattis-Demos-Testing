@@ -16,6 +16,8 @@ class Main(object):
 	def __init__(self) -> None:
 		"""
 		Constructor - uses single pattern
+		Returns:
+			None
 		"""
 		if Main._instance:
 			raise Exception("Cannot create multiple instances of a singleton class Main")
@@ -31,16 +33,25 @@ class Main(object):
 
 	@classmethod
 	def get_instance(cls) -> 'Main':
+		"""Create or return exsiting instance
+
+		Returns:
+				Main: class instance
+		"""
 		if not cls._instance:
 				cls._instance = Main()
 		return cls._instance
 
 	@staticmethod
 	def main() -> None:
+		"""main static method
+		"""
 		main = Main()
 		main.solve()
 
 def main() -> None:
+	"""main global function
+	"""
 	main = Main()
 	main.solve()
 
