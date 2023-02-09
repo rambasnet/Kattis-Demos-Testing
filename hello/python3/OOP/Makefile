@@ -23,7 +23,7 @@ check_types:
 	@echo "Type checking done."
 
 create_doc_folder:
-	mkdir -p $(DOCS)
+	@mkdir -p $(DOCS) # creates all folder(s) if not exists
 
 create_docs: create_doc_folder
 	pdoc --force -o docs main.py hello.py # creates .md docs in docs
