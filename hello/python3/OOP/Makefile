@@ -1,4 +1,3 @@
-
 # provide path to where plantuml.jar is downloaded
 PLANTUML = java -jar ~/plantuml.jar
 DOCS = docs 
