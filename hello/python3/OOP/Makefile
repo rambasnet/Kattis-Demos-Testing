@@ -51,5 +51,5 @@ endif
 	$(PLANTUML) uml/HelloWorld.plantuml
 	$(PLANTUML) uml/Main.plantuml
 	$(PLANTUML) uml/solution.plantuml
-	@echo "UML diagrams created and saved in $(DOCS)"
+	@echo "UML diagrams created and saved in uml folder"
 
