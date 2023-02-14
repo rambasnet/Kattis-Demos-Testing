@@ -33,8 +33,8 @@ create_doc_folder:
 	@mkdir -p $(DOCS) # creates all folder(s) if not exists
 
 create_docs: create_doc_folder
-	pdoc --force -o docs main.py hello.py # creates .md docs in docs
-	pdoc --force --html -o docs main.py hello.py # creates html docs in docs
+	pdoc --force -o docs main.py hello.py # creates .md docs inside docs
+	pdoc --force --html -o docs main.py hello.py # creates html docs inside docs
 	@echo "html docs created and saved in $(DOCS)"
 
 create_uml: create_doc_folder
