@@ -8,7 +8,7 @@ __maintainer__ = "Ram Basnet"
 Triangle class
 """
 
-from typing import List
+from typing import Tuple
 
 class Triangle(object):
 	"""
@@ -35,12 +35,12 @@ class Triangle(object):
 		self._side3 = side3
 
 	@property
-	def sides(self) -> List[float]:
+	def sides(self) -> Tuple[float, float, float]:
 		"""
 		Returns the sides of the triangle
 		:return: sides
 		"""
-		return [self._side1, self._side2, self._side3]
+		return (self._side1, self._side2, self._side3)
 
 	@property
 	def perimeter(self) -> float:
