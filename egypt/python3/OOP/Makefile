@@ -1,4 +1,4 @@
-all: check_types test run
+all: check_types unittest localtest
 
 check_types:
 	mypy --disallow-untyped-defs --strict main.py
@@ -8,12 +8,12 @@ check_types:
 	mypy --disallow-untyped-defs --strict test_triangle.py
 	@echo "Static type check done."
 
-test:
+unittest:
 	pytest test_solution.py
 	pytest test_triangle.py
-	@echo "Unittesting done."
+	@echo "Unittest done."
 
-run:
+localtest:
 	cat data/1.in | python main.py | diff - data/1.ans
 	cat data/1.in | python main_singleton.py | diff - data/1.ans
 	@echo "Local kattis sample data test done."
