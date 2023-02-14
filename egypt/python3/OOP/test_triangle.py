@@ -43,7 +43,7 @@ class TestTriangle(unittest.TestCase):
 		Tests getSides method
 		:return: None
 		"""
-		self.assertEqual(self.triangle.sides, [3, 4, 5])
+		self.assertEqual(self.triangle.sides, (3, 4, 5))
 
 	def test_isRightAngled(self) -> None:
 		"""
