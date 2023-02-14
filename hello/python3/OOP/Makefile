@@ -19,6 +19,7 @@ localtest:
 	@echo "Program worked on sample data!" 
 
 check_types:
+# use shell command which to check if mypy is installed and is in $PATH
 ifeq ($(shell which mypy), )
 	@echo "mypy not found. Installing mypy..."
 	pip install mypy
@@ -38,6 +39,7 @@ create_docs: create_doc_folder
 	@echo "html docs created and saved in $(DOCS)"
 
 create_uml: create_doc_folder
+# use shell command which to check if java is installed and is in the $PATH
 ifeq ($(shell which java), )
 	$(error "No java found in $(PATH). Install java to run plantuml")
 endif
