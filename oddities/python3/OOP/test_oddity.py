@@ -1,3 +1,5 @@
+from __future__ import annotations
+
 __author__ = "Ram Basnet"
 __date__ = "2023/1/1"
 __license__ = "MIT"

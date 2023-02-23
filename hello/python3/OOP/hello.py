@@ -1,8 +1,11 @@
+from __future__ import annotations
+
 __author__ = "Ram Basnet"
 __date__ = "2023/1/1"
 __license__ = "MIT"
 __version__ = "0.1.0"
 __maintainer__ = "Ram Basnet"
+
 
 """
 Hello World Program using OOP
