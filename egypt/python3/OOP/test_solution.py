@@ -74,5 +74,3 @@ class TestSolution(unittest.TestCase):
 			expected: str = 'wrong\nwrong\nwrong\nright\n'
 			self.assertEqual(sol.answer, expected)
 
-if __name__ == '__main__':
-	unittest.main(verbosity=2)

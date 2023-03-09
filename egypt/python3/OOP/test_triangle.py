@@ -68,6 +68,3 @@ class TestTriangle(unittest.TestCase):
 		self.triangle.set_sides(3, 4, 7)
 		self.assertFalse(self.triangle.is_right_angled())
 
-
-if __name__ == '__main__':
-	unittest.main(verbosity=2)

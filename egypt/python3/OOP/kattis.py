@@ -23,7 +23,7 @@ class Kattis(ABC):
 		Reads the data from the given source
 		:return: None
 		"""
-		...
+		pass
 
 	@property
 	@abstractmethod
@@ -32,7 +32,7 @@ class Kattis(ABC):
 		Returns the data
 		:return: data
 		"""
-		...
+		pass
 
 	@property
 	@abstractmethod
