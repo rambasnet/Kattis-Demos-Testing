@@ -11,6 +11,7 @@ from typing import Optional
 
 """
 Main manager class that manages HelloWorld
+Uses Single Pattern - https://refactoring.guru/design-patterns/singleton
 """
 
 class Main(object):
