@@ -11,6 +11,3 @@ from hello import answer
 def test_answer():
     assert answer() == "Hello World!"
     print('all test cases passed...')
-
-if __name__ == "__main__":
-  test_answer()

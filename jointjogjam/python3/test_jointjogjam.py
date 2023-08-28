@@ -15,7 +15,6 @@ def test_distance():
   assert(abs(distance(0, 0, 2, 2) - ans) <= MAX_ERROR) 
   ans = 15.8113883008
   assert(abs(distance(1, 30, 6, 45) - ans) <= MAX_ERROR)
-  print('Congrtulations! All test cases passed for distance()')
 
 def test_answer():
   startDist = distance(0, 0, 1, 1)
@@ -30,8 +29,3 @@ def test_answer():
   endDist = distance(5, 0, 10, 0)
   actual = 5
   assert(answer(startDist, endDist) - actual <= MAX_ERROR)
-  print('Congratulations! All test cases passed for answer()')
-
-if __name__ == '__main__':
-  test_distance()
-  test_answer()

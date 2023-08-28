@@ -30,9 +30,5 @@ def test() -> None:
     assert answer1('0 453445 -1 -100 -45454 -44445') == 4
     print('all test casses passed...')
 
-
 if __name__ == "__main__":
-    if len(sys.argv) > 1 and sys.argv[1] == 'test':
-        test()
-    else:
-        solve()
+    solve()

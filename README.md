@@ -18,7 +18,7 @@ pip3 install -U mypy
 ## Programming Languages
 
 - demos are provided in the following several languages
-- follow the instruction based on your language and operating system
+- follow the instructions based on your language and operating system
 
 ## C++
 
@@ -94,9 +94,8 @@ pip3 install -U mypy
 ```bash
   mypy --strict <module>.py
   mypy --strict test_<module>.py
-  pytest
+  pytest <module.py>
   python3 -m unittest
-  python3 test_<module>.py
 ```
 
 - run kattis provided sample test cases e.g. if 1.in and 1.ans are sample test files

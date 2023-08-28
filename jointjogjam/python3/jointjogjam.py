@@ -18,7 +18,7 @@ def solve() -> None:
   for n in data.split():
     cleanData.append((int(n)))
   """
-  # or use consice list comprehension syntax
+  # or use list comprehension syntax
   cleanData = [int(x) for x in input().split()]
   startDist = distance(cleanData[0], cleanData[1], cleanData[2], cleanData[3])
   endDist = distance(cleanData[4], cleanData[5], cleanData[6], cleanData[7])
