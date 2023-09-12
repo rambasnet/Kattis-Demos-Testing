@@ -24,11 +24,5 @@ def solve() -> None:
     print(answer1(data[1]))
 
 
-def test() -> None:
-    assert answer([12, -4, -56, -4544545, 64, 46464]) == 3
-    assert answer([0, 453445, -1, -100, -45454, -44445]) == 4
-    assert answer1('0 453445 -1 -100 -45454 -44445') == 4
-    print('all test casses passed...')
-
 if __name__ == "__main__":
     solve()

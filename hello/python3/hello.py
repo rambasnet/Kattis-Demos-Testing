@@ -11,9 +11,5 @@ def answer():
 def solve():
   print(answer())
 
-def test():
-  assert answer() == "Hello World!"
-  print('all test cases passed...')
-
 if __name__ == "__main__":
   solve()
