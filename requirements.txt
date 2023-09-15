@@ -1,0 +1,5 @@
+pytest
+jupyter
+pymongo[srv]
+mypy
+hypothesis

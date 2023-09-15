@@ -3,7 +3,7 @@
 import sys
 from typing import List
 
-def answer(data: List) -> int:
+def answer(data: List[int]) -> int:
     count = 0
     for t in data:
         if t < 0:

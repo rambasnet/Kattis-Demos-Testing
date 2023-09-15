@@ -7,4 +7,4 @@ jobs:
           pkg-manager: pip
       - run:
           name: Run tests
-          command: python -m pytest
+          command: python -m pytest 
