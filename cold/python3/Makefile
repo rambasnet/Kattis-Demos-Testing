@@ -1,13 +1,13 @@
 MAIN = cold.py
 PY = python3
 
-all: check_types unittest localtest unittest_pytest
+all: check_style check_types unittest localtest unittest_pytest
 	@echo "All done!"
 
 localtest:
 	@cat ../1.in | $(PY) $(MAIN) | diff - ../1.ans
 	@cat ../2.in | $(PY) $(MAIN) | diff - ../2.ans
-	@echo "All local test passed!"
+	@echo "All local tests passed!"
 
 unittest:
 ifeq ($(shell which pytest), ) # if pytest not found
@@ -23,3 +23,5 @@ check_types:
 	mypy --disallow-untyped-defs --strict cold.py
 	mypy --disallow-untyped-defs --strict test_unit_cold.py
 
+check_style:
+	flake8 cold.py --count --show-source --statistics

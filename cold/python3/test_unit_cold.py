@@ -14,7 +14,6 @@ from hypothesis import strategies as some
 from hypothesis import assume, settings, Verbosity
 from typing import List
 
-
 from cold import answer, answer1
 
 class TestCold(unittest.TestCase):
