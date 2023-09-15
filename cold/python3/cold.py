@@ -1,10 +1,24 @@
 #! /usr/bin/env python3
+"""
+Kattis cold problem
+Ram Basnet
+Sept. 14, 2023
 
+Find the number of temperatures strictly less than zero.
+"""
 import sys
 from typing import List
 
 
 def answer(data: List[int]) -> int:
+    """Count total number of -ve temeratures in data.
+
+    Args:
+        data (List[int]): List of integers as temperature
+
+    Returns:
+        int: count of -ve temps
+    """
     count = 0
     for t in data:
         if t < 0:
@@ -13,10 +27,20 @@ def answer(data: List[int]) -> int:
 
 
 def answer1(line: str) -> int:
+    """Count total number of -ve temeratures in data.
+
+    Args:
+        line (str): integer temperatures as space separated string
+
+    Returns:
+        int: count of -ve temps
+    """
     return line.count('-')
 
 
 def solve1() -> None:
+    """Reads input ans uses answer1 function.
+    """
     n = input()
     temps = sys.stdin.readline().strip()
     print(f'{n=}; {temps=}', file=sys.stderr)
@@ -24,9 +48,11 @@ def solve1() -> None:
 
 
 def solve() -> None:
-    n = int(sys.stdin.readline())
+    """Reads input and parses the string as list of integer.
+    """
+    n = input()
     # use list comprehension syntax
-    temps = [int(n) for n in sys.stdin.readline().strip().split()]
+    temps = [int(temp) for temp in sys.stdin.readline().strip().split()]
     print(f'{n=}; {temps=}', file=sys.stderr)
     print(answer(temps))
 
