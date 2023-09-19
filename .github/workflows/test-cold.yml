@@ -33,6 +33,9 @@ jobs:
         flake8 cold/python3/cold.py --count --show-source --statistics
         # exit-zero treats all errors as warnings. The GitHub editor is 127 chars wide
         # flake8 . --count --exit-zero --max-complexity=10 --max-line-length=127 --statistics
+    - name: Check types with mypy
+      run: |
+        mypy cold/python3/cold.py
     - name: Test with pytest
       run: |
         pytest cold/python3/test_unit_cold.py
