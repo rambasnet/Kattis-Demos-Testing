@@ -1,7 +1,8 @@
 MAIN = cold.py
 PY = python3
 
-all: check_style check_types unittest localtest unittest_pytest submit
+# target and its dependencies followed by commands
+all: check_style check_types unittest localtest unittest_pytest submit clean
 	@echo "All done!"
 
 localtest:
@@ -28,4 +29,8 @@ check_style:
 
 # submit to kattis
 submit:
-	kattis --problem cold --force --language 'python 3' $(MAIN)
+	kattis --problem cold --language 'python 3' --force $(MAIN)
+
+clean:
+	rm -rf __pycache__
+	rm -rf *.pyc
