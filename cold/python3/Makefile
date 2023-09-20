@@ -1,7 +1,7 @@
 MAIN = cold.py
 PY = python3
 
-all: check_style check_types unittest localtest unittest_pytest
+all: check_style check_types unittest localtest unittest_pytest submit
 	@echo "All done!"
 
 localtest:
@@ -25,3 +25,7 @@ check_types:
 
 check_style:
 	flake8 cold.py --count --show-source --statistics
+
+# submit to kattis
+submit:
+	kattis --problem cold --force --language 'python 3' $(MAIN)
