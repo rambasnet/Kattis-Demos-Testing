@@ -43,7 +43,7 @@ def solve1() -> None:
     """
     n = input()
     temps = sys.stdin.readline().strip()
-    print(f'{n=}; {temps=}', file=sys.stderr)
+    #print(f'{n=}; {temps=}', file=sys.stderr)
     print(answer1(temps))
 
 
@@ -53,7 +53,7 @@ def solve() -> None:
     n = input()
     # use list comprehension syntax
     temps = [int(temp) for temp in sys.stdin.readline().strip().split()]
-    print(f'{n=}; {temps=}', file=sys.stderr)
+    #print(f'{n=}; {temps=}', file=sys.stderr)
     print(answer(temps))
 
 
